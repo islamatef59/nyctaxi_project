@@ -1,12 +1,4 @@
 # Databricks notebook source
-import os
-print(os.getcwd())
-project_root = os.path.abspath(os.path.join(os.getcwd(), "../.."))
-print(project_root)
-
-
-# COMMAND ----------
-
 
 import urllib.request
 import os

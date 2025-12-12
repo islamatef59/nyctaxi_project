@@ -6,12 +6,12 @@ import shutil
 from datetime import datetime
 from datetime import date, datetime, timezone
 from dateutil.relativedelta import relativedelta
-from modules.utils.date_utils import get_target_yyyymm
-from modules.data_loader.file_downloader import download_file
 project_root = os.path.abspath(os.path.join(os.getcwd(), "../.."))
 
 if project_root not in sys.path:
     sys.path.append(project_root)
+from modules.data_loader.file_downloader import download_file
+from modules.utils.date_utils import get_target_yyyymm
 
 
 # COMMAND ----------
