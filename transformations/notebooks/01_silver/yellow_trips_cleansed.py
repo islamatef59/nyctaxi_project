@@ -21,7 +21,7 @@ one_months_ago_start=get_month_start_n_months_ago(1)
 
 # COMMAND ----------
 
-df = spark.read.table("nyctaxi.01_bronze.yellow_trips_raw").filter(f"tpep_pickup_datetime >= '{two_months_ago_start}' AND tpep_pickup_datetime < '{one_month_ago_start}'")
+df = spark.read.table("nyctaxi.01_bronze.yellow_trips_raw").filter(f"tpep_pickup_datetime >= '{two_months_ago_start}' AND tpep_pickup_datetime < '{one_months_ago_start}'")
 
 
 # COMMAND ----------
