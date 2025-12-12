@@ -16,7 +16,7 @@ from modules.transformations.metadata import add_processed_timestamp
 
 # COMMAND ----------
 
-formatted_date=get_target_yyyymm(2)
+formated_date=get_target_yyyymm(2)
 
 
 df=spark.read.format("parquet").load(f"/Volumes/nyctaxi/00_landing/data_sources/nctaxi_yellow/{formated_date}")
