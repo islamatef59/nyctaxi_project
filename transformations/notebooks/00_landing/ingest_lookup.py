@@ -1,14 +1,15 @@
 # Databricks notebook source
+import urllib.request
+import os
+import shutil
+from modules.data_loader.file_downloader import download_file
 project_root = os.path.abspath(os.path.join(os.getcwd(), "../.."))
 
 if project_root not in sys.path:
     sys.path.append(project_root)
 
 
-import urllib.request
-import os
-import shutil
-from modules.data_loader.file_downloader import download_file
+
 # COMMAND ----------
 
 try:
